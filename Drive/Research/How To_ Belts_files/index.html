@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://wcproducts.net/js/belt_calc/public_html/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>belt_calc</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="belt_calc.css">
+    </head>
+    <body>
+        <script src="jquery.js"></script>
+        <script src="constants.js"></script>
+        <script src="query_functions.js"></script>
+        <script src="solver.js"></script>
+        <script src="belt_calc.js"></script>
+        <div style="margin-left: -9px;"><p class="head">Belt Calculator</p></div>
+            
+            <select class="calclabels" id="pitchselect">
+            <option>5mm HTD</option>
+            <!--<option>3mm HTD</option>-->
+            </select>
+            <br>
+            <br>
+            <div id="pulley1inputs" style="float:left;margin-left: -9px;">
+                <p class="head">Pulley 1</p>
+                <label class="userinputs" for="Pulley1teeth">Number of Teeth</label>
+                <input class="userinput" type="text" id="Pulley1teeth" value="24"><br>
+                <label class="calclabels" for="Pulley1OD">Outer Diameter</label>
+                <input class="calcinputs" type="text" id="Pulley1OD" readonly=""><br>
+                <label class="calclabels" for="Pulley1PD">Pitch Diameter</label>
+                <input class="calcinputs" type="text" id="Pulley1PD" readonly=""><br>
+            </div>
+        
+            <div id="pulley2inputs" style="float:left">
+                <p class="head">Pulley 2</p>
+                <label class="userinputs" for="Pulley2teeth">Number of Teeth</label>
+                <input class="userinput" type="text" id="Pulley2teeth" value="18"><br>
+                <label class="calclabels" for="Pulley2OD">Outer Diameter</label>
+                <input class="calcinputs" type="text" id="Pulley2OD" readonly=""><br>
+                <label class="calclabels" for="Pulley2PD">Pitch Diameter</label>
+                <input class="calcinputs" type="text" id="Pulley2PD" readonly=""><br>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <div style="float:left"> 
+                <p class="head">Center Distance</p>
+                <label class="userinputs" for="DesiredCenter">Desired Center</label> 
+                <input class="userinput" type="text" id="DesiredCenter" value="5"><br>
+                <label class="userinputs" for="CenterAdd">Center Add</label>
+                <input class="userinput" type="text" id="CenterAdd" value=".001"><br>
+                <label class="userinputs" for="Ratio">Ratio</label>
+                <input class="calcinputs" type="text" id="Ratio" readonly=""><br>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div style="float:left;margin-left: -9px;">
+                <p class="head">Smaller Belt</p>
+                <label class="calclabels" for="Lowerbeltteeth"># of Teeth</label>
+                <input class="calcinputs" type="text" id="Lowerbeltteeth" readonly=""><br>
+                <label class="calclabels" for="LowerbeltC">Center Distance</label>
+                <input class="calcinputs" type="text" id="LowerbeltC" readonly=""><br>
+                <label class="calclabels" for="LowerP1T">P1 Teeth in Mesh</label>
+                <input class="calcinputs" type="text" id="LowerP1T" readonly=""><br>
+                <label class="calclabels" for="LowerP2T">P2 Teeth in Mesh</label>
+                <input class="calcinputs" type="text" id="LowerP2T" readonly=""><br>
+            </div>
+           <div style="float:left">
+                <p class="head">Larger Belt</p>
+                <label class="calclabels" for="Upperbeltteeth"># of Teeth</label>
+                <input class="calcinputs" type="text" id="Upperbeltteeth" readonly=""><br>
+                <label class="calclabels" for="UpperbeltC">Center Distance</label>
+                <input class="calcinputs" type="text" id="UpperbeltC" readonly=""><br>
+                <label class="calclabels" for="UpperP1T">P1 Teeth in Mesh</label>
+                <input class="calcinputs" type="text" id="UpperP1T" readonly=""><br>
+                <label class="calclabels" for="UpperP2T">P2 Teeth in Mesh</label>
+                <input class="calcinputs" type="text" id="UpperP2T" readonly=""><br>
+            </div>
+        <script>
+            $("#pitchselect").change(function(){
+              runcalc();
+            });
+             $("#Pulley1teeth").change(function(){
+              runcalc();
+            });
+             $("#Pulley2teeth").change(function(){
+              runcalc();
+            });
+             $("#DesiredCenter").change(function(){
+              runcalc();
+            });
+             $("#Centeradd").change(function(){
+              runcalc();
+            });
+            $('input').hover(
+                function(){
+        $(this).prev().addClass('hover');
+      },
+                function(){
+        $(this).prev().removeClass('hover');
+      }
+                 );
+                 
+             $(document).keypress(function(e){
+                 if(e.which === 13){
+                     runcalc();
+                 }
+             });
+        </script>
+    
+
+</body></html>

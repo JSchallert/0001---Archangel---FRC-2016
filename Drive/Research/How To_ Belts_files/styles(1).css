@@ -1,0 +1,11 @@
+
+#checkout-step-review .data-table .btn-remove,
+.checkout-multishipping-overview .data-table .btn-remove,
+#details-table .btn-remove { display:-moz-inline-stack; display:inline-block; vertical-align:middle; }
+
+.data-table .btn-remove { display:block; margin:0 auto; width:13px; height:12px; font-size:0; line-height:0; background: none; text-indent:-999em; overflow:hidden; }
+.data-table .btn-remove2 {}
+
+.my-account .storecredit .account-balance {
+    margin-bottom: 24px;
+}

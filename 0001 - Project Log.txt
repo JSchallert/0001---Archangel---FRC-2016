@@ -1,0 +1,60 @@
+2016 Robot 'Archangel' Project Log
+-----------------------------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------------- WORKING ON NOW
+-Motor mount for Gatekeeper using given parts
+
+----------------------------------------------------------------------------------------------------- TO DO
+
+-implement climbing arm idea
+-CAD Defense articulator
+-build BOM
+-Apply materials
+-Get weight
+-Install fasteners
+-Finish Intake Wheels
+
+----------------------------------------------------------------------------------------------------- TO RESEARCH
+
+-Hinges for shooter, implement into CAD
+-Rivets as fasteners
+-Bolts from McMaster
+-Powdercoating/bending in one day?
+
+----------------------------------------------------------------------------------------------------- IDEAS
+
+-Dota Logo
+-CAD rivets?
+-Mount GK to Intake axis? No conflicts???
+
+----------------------------------------------------------------------------------------------------- DONE
+
+-Make 118-esque cutouts
+-Hinge for intake
+	-possibly bearings, possibly a bushing
+-Verify ground clearance
+-Confirm Gatekeeper Dimensions
+-Finish Shooter
+-Re-do shooter
+-Cut Out Drive Frame Material
+-Sort Previously Used Pieces
+-Start Shooter
+-Finish Electronics Board
+-Aperture Science Logo
+-HL Logo
+-Institute Logo
+-Try double layer electronic board
+-Confirm E-Board dimensions
+-Sheet metal parts for the gatekeeper
+-Cut out drive frame material
+-Start Shooter
+-Start Arms
+-Confirm belting and pulleys
+	-http://www.wcproducts.net/how-to-belts/
+	-http://content.vexrobotics.com/vexpro/pdf/217-HTD-Timing-Pulleys-20141106.PDF
+-Finish Intake
+-Start Intake reference geometry
+-Recreate Drive Module the right way
+-Confirm reference geometry
+-Create first Reference Geometry for 0001 - Archangel
